@@ -1,0 +1,189 @@
+*{padding: 0;
+margin: 0;
+}
+
+body{
+
+    /* background-repeat: repeat; */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    color: azure;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    background-color: #31363F;
+    position: fixed;
+    z-index: 10;
+}
+
+nav a{
+    text-decoration: none;
+    margin-right: 40px;
+    /* color: white; */
+    color: #76ABAE;
+    font-weight: bolder;
+}
+
+a:hover{
+    color: whitesmoke;
+}
+
+/* #about .about-navbar{
+    color: #76ABAE;
+} */
+
+.background-img{
+    background-image: url(../assets/backgrounud_img1.png.png);
+    height: 100vh;
+}
+
+.home-page-img{
+    border-radius: 100%;
+    border: 20px solid #31363F;
+    position: absolute;
+    top: 25%;
+    left: 60%;
+    
+}
+
+h1{
+    font-size: 100px; 
+    position: absolute;
+    top: 50%;
+    left: 15%;
+}
+
+#home p{
+    font-size: 20px;
+    color: #61677A;
+    position: absolute;
+    top: 47%;
+    left: 15%;
+}
+
+.about-page-image{
+    border-radius: 50%;
+    border: 30px solid #31363F;
+    position: relative;
+    bottom: 7%;
+    left: 6%;
+}
+
+.about-h3{
+    position: relative;
+    top: 35%;
+    left: 50%;
+    font-weight: 600;
+    font-size: 50px;
+    
+}
+
+.aboutP-tag{
+    position: relative;
+    left: 50%;
+    top: 40%;
+    width: 550px;
+    height: 440px;
+    font-weight: normal;
+    border: 1px solid gray;
+    height: 200px;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 2em;
+}
+
+#skills h3{
+    position: relative;
+    top: 33%;
+    left: 26%;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+#skills ul{
+    position: relative;
+    left: 15%;
+    top: 37%;
+    border: 1px solid gray;
+    height: 230px;
+    width: 400px;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 2em;
+}
+
+#skills li{
+margin-left: 50px;
+}
+
+
+.skills-page-image{
+    border-radius: 50%;
+    border: 30px solid #31363F;
+    position: relative;
+    left: 55%;
+    bottom: 12%;
+}
+
+#contact h3{
+    position: relative;
+    top: 38%;
+    left: 55%;
+    font-weight: 600;
+    font-size: 50px;
+
+}
+
+#contact ul{
+    position: relative;
+    top: 41%;
+    left: 59%;
+    list-style: none;
+    font-weight:lighter;
+}
+
+#contact li{
+    font-size: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 300px;
+    margin: 14px;
+    padding: 9px;
+}
+
+.contact-page-image{
+    border-radius: 50%;
+    border: 30px solid #31363F;
+    position: relative;
+    bottom: 7%;
+    left: 10%;
+}
+
+.icons-image{
+    position: relative;
+    left: 19%;
+    bottom: 17.5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
