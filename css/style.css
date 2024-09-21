@@ -1,6 +1,8 @@
 *{padding: 0;
 margin: 0;
 }
+/* @media screen and (max-width: 600px){ */
+    
 
 body{
 
@@ -36,20 +38,24 @@ a:hover{
     color: whitesmoke;
 }
 
+a:active
+
 /* #about .about-navbar{
     color: #76ABAE;
 } */
 
 .background-img{
-    background-image: url(../assets/backgrounud_img1.png.png);
+    background-image: url(../assets/img1.png);
     height: 100vh;
+    width: 100%;
 }
 
 .home-page-img{
-    border-radius: 100%;
+    border-radius: 60%;
     border: 20px solid #31363F;
     position: absolute;
-    top: 25%;
+    height: 600px;
+    top: 19%;
     left: 60%;
     
 }
@@ -86,7 +92,8 @@ h1{
     
 }
 
-.aboutP-tag{
+#about p{
+    
     position: relative;
     left: 50%;
     top: 40%;
