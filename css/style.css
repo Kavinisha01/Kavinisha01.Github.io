@@ -17,11 +17,7 @@ nav {
     height: 10vh;
     background-color: #323636 !important;
     position: fixed !important;
-    left: 0;
-    right: 0;
-    top: 0;
     z-index: 10;
-    /* overflow-x: hidden; */
 }
 
 .navbar-brand {
@@ -29,6 +25,7 @@ nav {
     color: #76ABAE !important;
     font-style: oblique;
     transition: transform 0.3s ease-in-out;
+    margin-left: 10px;
 }
 
 .navbar-brand:hover{
@@ -48,8 +45,11 @@ nav ul li a {
 
 nav ul li a:hover,
 a.active {
-    border-bottom: 2px solid #395B64;
-
+    /* border-bottom: 2px solid #395B64; */
+    border: 2px solid #395B64;
+    border-radius: 30px;
+    /* color: #395B64 !important; */
+    font-weight: 400;
 }
 
 @media screen and (max-width:992px){
@@ -81,6 +81,8 @@ a.active {
     color:#395B64;
     margin-top: 22%;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, .4);
+    background: rgba(32, 83, 83, 0.1);
+    backdrop-filter: blur(15px);
 }
 
 #home p {
