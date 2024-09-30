@@ -1,0 +1,78 @@
+*{
+    padding: 0%; margin: 0%;
+}
+.header{
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.about{
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+.about p{
+    padding: 10px;
+}
+
+#intro{
+    color: #6a6a6a;
+}
+
+.footer{
+    background-color: #282c34;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+h2{
+    text-align: center;
+}
+
+.movies h2{
+    padding-top: 30px;
+}
+
+.box-model-example img{
+    width: 100%;
+    height: 80%;
+
+}
+
+.box-model-example{
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    border: 2px solid gray;
+    border-radius: 5%;
+    margin: auto;
+    text-align: center;
+    width: 250px;
+    height: 410px;
+    padding: 30px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    
+}
+
+img{
+    width: 90%;
+    height: 80%;
+}
+
+.box-model-example h3{
+    padding-top: 5px;
+}
+
+.box-model-example p{
+    padding-top: 10px;
+    font-size: small;
+}
