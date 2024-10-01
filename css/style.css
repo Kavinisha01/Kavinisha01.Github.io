@@ -659,8 +659,10 @@ button:hover {
     }
 
     .contact-details {
-        width: 85%;
+        width: 70%;
         height: 30vh;
+        position: relative;
+        right: 30px;
     }
 
     .contact-details h2 {
@@ -680,7 +682,8 @@ button:hover {
         border-radius: 15px;
         margin-right: 50px;
         position: relative;
-        bottom: 25px;
+        bottom: 40px;
+        right: 15px;
     }
 
     input[type="text"],
@@ -694,8 +697,9 @@ button:hover {
         transition: border-color 0.3s ease;
     }
 
-    .textarea {
-        height: 20px;
+    textarea {
+        /* height: 20p; */
+        width: 100%;
     }
 
     button {
