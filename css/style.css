@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,100&display=swap');
 
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +9,7 @@
 
 body {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 nav {
@@ -45,11 +45,9 @@ nav ul li a {
 
 nav ul li a:hover,
 a.active {
-    /* border-bottom: 2px solid #395B64; */
-    border: 2px solid #395B64;
     border-radius: 30px;
-    /* color: #395B64 !important; */
-    font-weight: 400;
+    background: rgba(194, 202, 202, 0.1);
+    backdrop-filter: blur(15px);
 }
 
 @media screen and (max-width:992px){
@@ -425,28 +423,33 @@ i {
     font-weight: bold;
 }
 
+.percentage{
+    color: white;
+    margin-left: 10px;
+}
+
 .html {
     background-color: #323636 !important;
     width: 0%;
-    animation: html 3s forwards;
+    animation: html 3s forwards infinite;
 }
 
 .css {
     background-color: #323636 !important;
     width: 0%;
-    animation: css 3s forwards;
+    animation: css 3s forwards infinite;
 }
 
 .js {
     background-color: #323636 !important;
     width: 0%;
-    animation: js 3s forwards;
+    animation: js 3s forwards infinite;
 }
 
 .python {
     background-color: #323636 !important;
     width: 0%;
-    animation: python 3s forwards;
+    animation: python 3s forwards infinite;
 }
 
 @keyframes html {
@@ -455,7 +458,7 @@ i {
     }
 
     100% {
-        width: 65%;
+        width: 75%;
     }
 }
 
@@ -535,6 +538,10 @@ i {
 
 .contact-details {
     background-color: #2C3333;
+    width: 400px;
+    height: 500px;
+    margin-left: 60px;
+    margin-top: 30px;
     color: white;
     padding: 40px;
     border-radius: 15px;
