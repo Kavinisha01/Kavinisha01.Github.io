@@ -64,7 +64,7 @@ a.active {
 #home {
     width: 100vw;
     height: 100vh;
-    background-image: url(../assets/home-img.png);
+    background-image: url(../assets/home-bg-img.png);
     background-size: cover;
     display: flex;
     align-items: center;
@@ -205,7 +205,7 @@ a.active {
 }
 
 .content span {
-    color: black;
+    /* color: black; */
     font-weight: 700;
 }
 
@@ -431,25 +431,25 @@ i {
 .html {
     background-color: #323636 !important;
     width: 0%;
-    animation: html 3s forwards infinite;
+    animation: html 3s forwards;
 }
 
 .css {
     background-color: #323636 !important;
     width: 0%;
-    animation: css 3s forwards infinite;
+    animation: css 3s forwards;
 }
 
 .js {
     background-color: #323636 !important;
     width: 0%;
-    animation: js 3s forwards infinite;
+    animation: js 3s forwards;
 }
 
 .python {
     background-color: #323636 !important;
     width: 0%;
-    animation: python 3s forwards infinite;
+    animation: python 3s forwards;
 }
 
 @keyframes html {
@@ -540,7 +540,7 @@ i {
     background-color: #2C3333;
     width: 400px;
     height: 500px;
-    margin-left: 60px;
+    margin-left: 55px;
     margin-top: 30px;
     color: white;
     padding: 40px;
@@ -561,7 +561,7 @@ i {
 }
 
 .contact-details h2 span {
-    color: #395B64;
+    color: white;
     font-weight: 300;
 }
 
@@ -595,6 +595,7 @@ i {
 .contact-form {
     padding: 40px;
     border-radius: 15px;
+    mar
 }
 
 .contact-form h2 {
@@ -616,6 +617,7 @@ textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
+    margin-right: 40px;
     background-color: rgb(84, 84, 84);
     border: 1px solid #ddd;
     border-radius: 10px;
