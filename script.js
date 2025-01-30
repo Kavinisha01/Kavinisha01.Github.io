@@ -1,20 +1,9 @@
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('nav ul li a')
-window.onscroll = () =>{
-    sections.forEach(sec =>{
-        let top =  window.scrollY;
-        let offset =  sec.offsetTop;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
-        if(top >=offset &&top <offset + height) {
-          navLinks.forEach(Links => {
-            Links.classList.remove('active');
-            document.querySelector('nav ul li a[href*=' + id + ']').classList.add  ('active');
-          });
-        }
-    });
-  };
+document.querySelectorAll('.progress-circle').forEach((circle) => {
+  const progress = circle.getAttribute('data-progress');
+  circle.style.setProperty('--progress', progress);
+});
 
-
-
-
+document.querySelectorAll('.progress-bar').forEach((bar) => {
+  const progress = bar.getAttribute('data-progress');
+  bar.style.setProperty('--progress', progress);
+});
