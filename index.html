@@ -62,7 +62,7 @@
             </ul>
         </div>
         <div class="profile">
-            <img src="./assets/about-img.png" alt="Kavinisha" />
+            <img src="./assets/img1.jpg (1).png" alt="Kavinisha" />
         </div>
     </section>
 
@@ -208,7 +208,59 @@
         </div>
       </section>
       
-    
+      <section id="projects">
+        <div class="container">
+          <h1>Projects</h1>
+      
+          <!-- Tech Projects Section -->
+          <div class="project-category">
+            <h2>Tech Projects</h2>
+            <div class="project-grid">
+              <div class="project-box">
+                <img src="https://files.oaiusercontent.com/file-WDW9PTvXmA1hehaVVHMASe?se=2025-02-04T07%3A06%3A13Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D6255342b-0c77-49d0-a615-cd48b0cf322d.webp&sig=mNeEXHrzcuC%2BOEQIWCe9UTIX6qe%2Bx/K9bp6dGcltP20%3D" alt=""> 
+                <div class="project-content">
+                  <h3>My First Portfolio</h3>
+                  <p>My journey began with Portfolio V1, a simple yet meaningful representation of my skills. It was my first step into web development, built with basic HTML & CSS.</p>
+                  <a href="https://kavinisha01.github.io/portfoliov1/" class="explore-link"><span>Explore Now</span></a>
+                </div>
+              </div>
+
+              <div class="project-box">
+                <img src="https://files.oaiusercontent.com/file-SFBbEjeeaMNmU8r5ZVJbLA?se=2025-02-04T07%3A06%3A24Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D1bd957ab-5556-40d9-9078-c3a81bc28ae8.webp&sig=Rhs6K744AT/n1O5uMNExNbBSFL/jDMXCpF06UGQjg9M%3D" alt=""> 
+                <div class="project-content">
+                  <h3>My First Portfolio</h3>
+                  <p>With time, I improved my skills and redesigned my portfolio. Portfolio V2 came to life with a better UI, animations, and responsiveness, making it more professional and engaging.</p>
+                  <a href="" class="explore-link"><span>Explore Now</span></a>
+                </div>
+              </div>
+      
+              <!-- E-Commerce Website -->
+              <div class="project-box">
+                <img src="https://files.oaiusercontent.com/file-6WXxGKQt5pQKv8d7BcaqoM?se=2025-02-04T07%3A06%3A39Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D61a08616-f4b4-43b6-b716-81e8476e718e.webp&sig=ybf4m6cqNXCuv5/K7DtvSV8mWcIcEKy5d4/ee8YJTXE%3D" alt="">
+                <div class="project-content">
+                  <h3>E-Commerce Website</h3>
+                  <p>Taking everything I learned, I built a fully functional E-Commerce Website—MagicalDew, an online perfume store. This project integrates Firebase, has a responsive design, and showcases real-world e-commerce functionalities.</p>
+                  <a href="" class="explore-link"><span>Explore Now</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Life Skills Projects Section -->
+          <div class="project-category">
+            <h2>Life Skills Projects</h2>
+            <div class="project-grid">
+              <div class="project-box">
+                <div class="project-content">
+                  <h3>Life Skills Project</h3>
+                  <p>A project focused on leadership, teamwork, and personal growth.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+      </section>
     
     <!-- Contact Page -->
 
@@ -261,7 +313,35 @@
         </div>
     </section>
 
+    
+
     <script src="./script.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          const links = document.querySelectorAll('.menu a');
+          const sections = document.querySelectorAll('section');
+  
+          function changeActiveLink() {
+              let index = sections.length;
+  
+              while(--index && window.scrollY + 50 < sections[index].offsetTop) {}
+  
+              links.forEach((link) => link.classList.remove('active'));
+              links[index].classList.add('active');
+          }
+  
+          changeActiveLink();
+          window.addEventListener('scroll', changeActiveLink);
+  
+          links.forEach(link => {
+              link.addEventListener('click', function() {
+                  links.forEach(item => item.classList.remove('active'));
+                  this.classList.add('active');
+              });
+          });
+      });
+  </script>
 </body>
 
 </html>

@@ -55,11 +55,18 @@ body {
     padding: 0;
     margin: 0;
     width: 100%;
-    
+
 }
 
 .menu li {
     width: 100%;
+}
+
+
+.menu a:hover,
+.menu a.active {
+    color: #000;
+    font-weight: 400;
 }
 
 .menu li a {
@@ -67,6 +74,7 @@ body {
     display: flex;
     align-items: center;
     text-decoration: none;
+    position: relative;
     color: #fff;
     padding: 15px 20px;
     transition: background 0.3s, color 0.3s;
@@ -76,12 +84,6 @@ body {
 .menu li a i {
     margin-right: 15px;
     font-size: 20px;
-}
-
-.menu li a:hover {
-    color: #ffe600;
-    transform: scale(1.1);
-    font-weight: 500;
 }
 
 .social-links {
@@ -133,6 +135,7 @@ body {
 
 #home .content {
     width: 50%;
+    margin-left: 25px;
 }
 
 #home h1 {
@@ -424,7 +427,7 @@ h2 {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: conic-gradient(#bdcdcd calc(var(--progress) * 1%),
+    background: conic-gradient(from 0deg, #bdcdcd calc(var(--progress) * 1%),
             #131313 0deg);
     display: flex;
     justify-content: center;
@@ -471,77 +474,132 @@ h2 {
     align-items: center;
 }
 
-hr{
+hr {
     color: #FFD700 !important;
 }
-/* Projects Section */
+
 #projects {
     margin-left: 250px;
     width: calc(100% - 250px);
-    height: 100vh;
-    padding: 20px 50px;
-    background: #363b3b;
-    color: #fff;
+    padding: 50px 20px;
+    background-color:  #363b3b;
+    color: white;
+    text-align: center;
 }
 
 #projects h1 {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 40px;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.project-category h2 {
+    margin: 30px 0;
+    color: #C0C0C0;
+    text-transform: uppercase;
 }
 
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-}
+    justify-content: center;
+    align-items: center;
+  }
 
 .project-box {
-    background: linear-gradient(to bottom right, #788282, #3d3d3d);
-
-    border-radius: 15px;
-    /* box-shadow: 10px 10px 20px #d1d1d1, -10px -10px 20px #ffffff; */
-    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    margin-left: 45px;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
     overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.project-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease-in-out;
 }
 
 .project-box:hover {
     transform: scale(1.05);
-    box-shadow: 10px 10px 30px #bfbfbf;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
 .project-content {
-    padding: 20px;
-    text-align: center;
-    height: 200px;
-}
-
-.project-content h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #444;
-    margin-bottom: 10px;
-}
-
-.project-content p {
-    font-size: 1rem;
-    color: #777;
-}
-
-.project-box a {
-    text-decoration: none;
-    color: inherit;
-    display: block;
+    position: absolute;
     height: 100%;
-    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
+
+.project-box:hover .project-content {
+    opacity: 1;
+}
+
+.explore-link {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.4s ease;
+}
+
+.explore-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    transition: left 0.4s ease;
+    z-index: 0;
+}
+
+.explore-link:hover::before {
+    left: 0;
+}
+
+.explore-link:hover {
+    color: #333;
+}
+
+.explore-link span {
+    position: relative;
+    z-index: 1;
+}
+
+
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 #contact {
     margin-left: 250px;
     width: calc(100% - 250px);
     padding: 20px 50px;
-    background: #363b3b;
+    background: #323636;
     color: #fff;
     height: 80vh;
 }
