@@ -501,7 +501,7 @@ hr {
 .project-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    /* gap: 20px; */
     justify-content: center;
     align-items: center;
   }
@@ -511,9 +511,11 @@ hr {
 }
 .project-box {
     position: relative;
-    margin-left: 15px;
-    width: 350px;
-    height: 350px;
+    margin-left: 70px;
+    margin-right: 10px;
+    width: 250px;
+    height: 250px;
+    border: 1px solid teal;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
     display: flex;
     align-items: center;
@@ -547,6 +549,12 @@ hr {
     justify-content: center;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
+}
+.project-content h3 {
+    font-size: 18px;
+}
+.project-content p{
+    font-size: 10px;
 }
 
 .project-box:hover .project-content {
